@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnBMI"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bmiCalculator">
+
+    <ImageView
+        android:id="@+id/imgWeight"
+        android:layout_width="75dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etWeight"
+        app:layout_constraintEnd_toStartOf="@+id/etWeight"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etWeight"
+        app:layout_constraintVertical_bias="0.842"
+        app:srcCompat="@drawable/ic_baseline_fitness_center_24" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="246dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="78dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_height_24"
+        tools:layout_editor_absoluteX="22dp" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="239dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <Button
+        android:id="@+id/btncalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALcULATE BMI"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/tvBMI"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncalculate" />
+
+    <TextView
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBMI"
+        app:layout_constraintVertical_bias="0.57" />
+</androidx.constraintlayout.widget.ConstraintLayout>
